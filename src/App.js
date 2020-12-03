@@ -1,9 +1,19 @@
-import './App.css';
+import React from 'react';
+import './App.scss';
+import Header from './Components/Header';
+import Main from './Components/Main';
+import Footer from './Components/Footer';
 
-function App() {
-  return (
-    <p className="test">テスト</p> // JSXにクラス名をつける場合「className='クラス名'」とする
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;
