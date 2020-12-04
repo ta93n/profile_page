@@ -4,7 +4,7 @@ class Footer extends React.Component {
   render(){
     return(
       <footer>
-        <p>フッター</p>
+        <p>Takumi Nomura</p>
       </footer>
     );
   }
