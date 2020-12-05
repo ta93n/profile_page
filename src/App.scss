@@ -1,3 +1,7 @@
+p {
+  margin: 0;
+}
+
 .app {
   min-height: 100vh;
   display: flex;
@@ -27,6 +31,27 @@ header {
   flex: 1;
   background-color: #c7c7c7;
   height: 500px;
+  .top {
+    height: 300px;
+  }
+  .about_me {
+    height: 300px;
+    background-color: #fff;
+  }
+  .works {
+    height: 300px;
+  }
+  .skills {
+    height: 300px;
+    background-color: #fff;
+  }
+  .sns {
+    height: 300px;
+  }
+  .scroll {
+    background-color: #fff;
+    text-align: center;
+  }
 }
 
 footer {
@@ -35,7 +60,4 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  p {
-    margin: 0;
-  }
 }
