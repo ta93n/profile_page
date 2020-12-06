@@ -13,16 +13,12 @@ p {
 header {
   height: 100px;
   background-color: #ed6f6f;
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  nav {
     height: 100%;
     display: flex;
     float: right;
-    li {
+    button {
       margin: auto 0;
-      outline: solid 1px;
     }
   }
 }

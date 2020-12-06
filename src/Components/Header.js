@@ -4,13 +4,13 @@ class Header extends React.Component {
   render(){
     return(
       <header>
-        <ul>
-          <li>TOP</li>
-          <li>PROFILE</li>
-          <li>WORKS</li>
-          <li>SKILLS</li>
-          <li>SNS</li>
-        </ul>
+        <nav>
+          <button>TOP</button>
+          <button>PROFILE</button>
+          <button>WORKS</button>
+          <button>SKILLS</button>
+          <button>SNS</button>
+        </nav>
       </header>
     );
   }

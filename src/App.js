@@ -1,15 +1,27 @@
 import React from 'react';
-import './App.scss';
 import Header from './Components/Header';
-import Main from './Components/Main';
+import Top from './Components/Top';
+import AboutMe from './Components/AboutMe';
+import Works from './Components/Works';
+import Skills from './Components/Skills';
+import Sns from './Components/Sns';
+import ScrollUp from './Components/ScrollUp';
 import Footer from './Components/Footer';
+import './App.scss';
 
 class App extends React.Component {
   render() {
     return (
       <div className="app">
         <Header />
-        <Main />
+        <div className="main">
+          <Top />
+          <AboutMe />
+          <Works />
+          <Skills />
+          <Sns />
+          <ScrollUp />
+        </div>
         <Footer />
       </div>
     );
