@@ -10,9 +10,8 @@ class ScrollUp extends Component {
   render() {
     return(
       <div className="scroll scroll-up">
-        <div className="arrow bounce"> {/* JSXにJavaScriptを埋め込むには、JavaScriptの部分を中括弧{ }で囲む */}
-          <i onClick={this.scrollToTop} className="fa fa-chevron-circle-up" /> {/* thisとはScrollUpクラスのこと */}
-        </div>
+        {/* JSXにJavaScriptを埋め込むには、JavaScriptの部分を中括弧{ }で囲む */}
+        <i onClick={this.scrollToTop} className="fa fa-chevron-circle-up" /> {/* thisとはScrollUpクラスのこと */}
       </div>
     );
   }
