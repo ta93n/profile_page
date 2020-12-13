@@ -5,7 +5,7 @@ class Header extends React.Component {
     return(
       <header>
         <nav>
-          <button>TOP</button>
+          <button onClick={this.props.scrollIntoView}>TOP</button>
           <button>PROFILE</button>
           <button>WORKS</button>
           <button>SKILLS</button>

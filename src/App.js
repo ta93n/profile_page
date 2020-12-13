@@ -10,10 +10,21 @@ import Footer from './Components/Footer';
 import './App.scss';
 
 class App extends React.Component {
+
+  scrollIntoView() {
+    document.getElementById("top").scrollIntoView({ // elementまでページをスクロール
+      behavior: 'smooth', // スクロールの動作を指定
+      block: 'center', // 垂直方向のスクロール位置を指定
+      inline: 'nearest', // 水平方向のスクロール位置を指定
+    });
+  }
+
   render() {
     return (
       <div className="app">
-        <Header />
+        <Header
+          scrollIntoView={() => this.scrollIntoView()}
+        />
         <div className="main">
           <Top />
           <AboutMe />
