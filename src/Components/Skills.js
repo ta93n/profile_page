@@ -3,7 +3,7 @@ import React from 'react';
 class Skills extends React.Component {
   render(){
     return(
-      <div className="skills">
+      <div id="skills">
         <p>ここはskillsページです</p>
       </div>
     );

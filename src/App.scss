@@ -17,8 +17,14 @@ header {
     height: 100%;
     display: flex;
     float: right;
-    button {
-      margin: auto 0;
+    a {
+      margin: auto 10px;
+    }
+    a:hover {
+      background-color: #c7c7c7;
+    }
+    .active {
+      border-bottom: 2px solid #fff;
     }
   }
 }
@@ -27,24 +33,24 @@ header {
   flex: 1;
   background-color: #c7c7c7;
   height: 500px;
-  .top {
+  #top {
     height: 300px;
   }
-  .about_me {
-    height: 300px;
-    background-color: #fff;
-  }
-  .works {
-    height: 300px;
-  }
-  .skills {
+  #profile {
     height: 300px;
     background-color: #fff;
   }
-  .sns {
+  #works {
     height: 300px;
   }
-  .scroll {
+  #skills {
+    height: 300px;
+    background-color: #fff;
+  }
+  #contact {
+    height: 300px;
+  }
+  #scroll_up {
     background-color: #fff;
     text-align: center;
   }

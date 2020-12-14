@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Sns extends React.Component {
+class Contact extends React.Component {
   render(){
     return(
-      <div className="sns">
+      <div id="contact">
         <p>ここはsnsページです</p>
       </div>
     );
   }
 }
 
-export default Sns;
+export default Contact;
