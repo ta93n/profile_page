@@ -4,7 +4,12 @@ class Top extends React.Component {
   render(){
     return(
       <div id="top">
-        <p>ここはtopページです</p>
+        <div className="top_left">
+          <img src="top.jpg" />
+        </div>
+        <div className="top_right">
+          <h3>TAKUMI NOMURA</h3>
+        </div>
       </div>
     );
   }

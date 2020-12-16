@@ -12,19 +12,24 @@ p {
 
 header {
   height: 100px;
-  background-color: #ed6f6f;
+  width: inherit;
+  background-color: #fff;
+  position: fixed;
   nav {
     height: 100%;
     display: flex;
     float: right;
     a {
-      margin: auto 10px;
+      margin: auto 0px;
+      padding: 7px 20px;
+      border-radius: 5px;
     }
     a:hover {
+      transition-duration: 0.2s;
       background-color: #c7c7c7;
     }
     .active {
-      border-bottom: 2px solid #fff;
+      background-color: #c7c7c7;
     }
   }
 }
@@ -32,27 +37,58 @@ header {
 .main {
   flex: 1;
   background-color: #c7c7c7;
-  height: 500px;
   #top {
-    height: 300px;
+    margin-top: 100px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    .top_left {
+      text-align: center;
+      img {
+        width: 300px;
+        height: 300px;
+        border-radius: 200px;
+        margin: 150px 0;
+      }
+    }
+    .top_right {
+      text-align: center;
+      h3 {
+        margin: 286px 40px;
+      }
+    }
   }
   #profile {
-    height: 300px;
+    height: 600px;
     background-color: #fff;
+    .profile_title {
+      text-align: center;
+      h3 {
+        padding: 20px 0;
+        margin: 0;
+      }
+    }
+    .profile_contents {
+      p {
+        line-height: 30px;
+      }
+    }
   }
   #works {
-    height: 300px;
+    height: 600px;
   }
   #skills {
-    height: 300px;
+    height: 600px;
     background-color: #fff;
   }
   #contact {
-    height: 300px;
+    height: 600px;
   }
   #scroll_up {
+    height: 150px;
     background-color: #fff;
     text-align: center;
+    font-size: 50px;
   }
 }
 
