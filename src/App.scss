@@ -42,7 +42,7 @@ header {
     height: 600px;
     display: flex;
     justify-content: space-around;
-    .top_left {
+    .top-left {
       text-align: center;
       img {
         width: 300px;
@@ -51,7 +51,7 @@ header {
         margin: 150px 0;
       }
     }
-    .top_right {
+    .top-right {
       text-align: center;
       h3 {
         margin: 286px 40px;
@@ -61,14 +61,14 @@ header {
   #profile {
     height: 600px;
     background-color: #fff;
-    .profile_title {
+    .profile-header {
       text-align: center;
       h3 {
         padding: 20px 0;
         margin: 0;
       }
     }
-    .profile_contents {
+    .profile-contents {
       p {
         line-height: 30px;
       }
@@ -76,15 +76,78 @@ header {
   }
   #works {
     height: 600px;
+    .works-header {
+      text-align: center;
+      h3 {
+        padding: 20px 0;
+        margin: 0;
+      }
+    }
+    .works-contents {
+      display: flex;
+    }
+    .modal {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .modal-inner {
+      position: absolute;
+      top: 8%;
+      right: 0;
+      left: 0;
+      width: 480px;
+      padding-bottom: 60px;
+      margin: auto;
+      background-color: rgb(255, 255, 255);
+      border-radius: 8px;
+    }
+    .modal-header {
+      height: 8px;
+      width: 100%;
+      margin-bottom: 60px;
+      border-radius: 8px 8px 0 0;
+    }
+    .modal-introduction p {
+      color: #5876a3;
+      width: 384px;
+      line-height: 32px;
+      text-align: left;
+      margin: 36px auto 40px;
+    }
+    .modal-close-btn {
+      font-size: 13px;
+      color: #8491a5;
+      width: 200px;
+      padding: 16px 0;
+      border: 0;
+      background-color: #f0f4f9;
+      cursor: pointer;
+    }
+    .modal-close-btn:hover {
+      color: #8491a5;
+      background-color: #ccd9ea;
+      transition: .3s ease-in-out;
+    }
   }
   #skills {
     height: 600px;
     background-color: #fff;
+    .skills-header {
+      text-align: center;
+      h3 {
+        padding: 20px 0;
+        margin: 0;
+      }
+    }
   }
   #contact {
     height: 600px;
   }
-  #scroll_up {
+  #scroll-up {
     height: 150px;
     background-color: #fff;
     text-align: center;
