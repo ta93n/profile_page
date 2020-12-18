@@ -1,5 +1,6 @@
 import React from 'react';
 import Work from './Work';
+import Skill from './Skill';
 import ScrollUp from './ScrollUp';
 
 class Main extends React.Component {
@@ -66,7 +67,7 @@ class Main extends React.Component {
             <h3>SKILLS</h3>
           </div>
           <div className="skills-contents">
-
+            <Skill />
           </div>
         </div>
         <div id="contact">
