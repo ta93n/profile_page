@@ -6,11 +6,11 @@ class Skill extends React.Component {
     const data = [
   {
     "name": "HTML&CSS",
-    "習熟度": 70
+    "習熟度": 60
   },
   {
     "name": "JavaScript",
-    "習熟度": 25
+    "習熟度": 20
   },
   {
     "name": "Ruby",
@@ -22,7 +22,7 @@ class Skill extends React.Component {
   },
   {
     "name": "React",
-    "習熟度": 15
+    "習熟度": 10
   },
   {
     "name": "AWS",
