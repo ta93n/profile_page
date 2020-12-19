@@ -46,7 +46,7 @@ class Work extends React.Component {
         onClick={() => {this.handleClickWork()}}
       >
         <div className="work-image">
-          <img src={this.props.image} />
+          <img src={this.props.image} alt="work" />
         </div>
         <div className="work-contents">
           <div className="work-name">

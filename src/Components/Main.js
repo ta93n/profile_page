@@ -36,7 +36,7 @@ class Main extends React.Component {
       <div className="main">
         <div id="top">
           <div className="top-left">
-            <img src="top.jpg" />
+            <img src="top.jpg" alt="top" />
           </div>
           <div className="top-right">
             <h3>TAKUMI NOMURA</h3>
