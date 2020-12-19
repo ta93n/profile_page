@@ -4,7 +4,9 @@ import Skill from './Skill';
 import ScrollUp from './ScrollUp';
 
 class Main extends React.Component {
+
   render() {
+
     const works = [
       {
         name: "Noodles",
@@ -24,6 +26,7 @@ class Main extends React.Component {
     ];
 
     return (
+
       <div className="main">
         <div id="top">
           <div className="top-left">
@@ -71,7 +74,9 @@ class Main extends React.Component {
           </div>
         </div>
         <div id="contact">
-          <p>ここはsnsページです</p>
+          <div className="contact-header">
+            <h3>CONTACT</h3>
+          </div>
         </div>
         <ScrollUp />
       </div>
