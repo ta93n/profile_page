@@ -9,19 +9,25 @@ class Main extends React.Component {
 
     const works = [
       {
+        key: 1,
         name: "Noodles",
         image: "/noodles.png",
-        introduction: "ラーメンの情報を友達と共有できるSNSアプリケーションです。自分で作ったものを友達に使ってもらいたいと思い、キャッチーなアプリケーションを意識しました。"
+        introduction: "ラーメンの情報を友達と共有できるSNSアプリケーションです。自分で作ったものを友達に使ってもらいたいと思い、キャッチーなアプリケーションを意識しました。",
+        skill: "Rails + AWS"
       },
       {
+        key: 2,
         name: "ProfilePage",
         image: "/logo192.png",
-        introduction: "こちらのページです。"
+        introduction: "こちらのページです。",
+        skill: "React + Heroku"
       },
       {
+        key: 3,
         name: "MemoryGame",
         image: "/MemoryGame.png",
-        introduction: "神経衰弱です。"
+        introduction: "神経衰弱です。",
+        skill: "JavaScript"
       }
     ];
 
@@ -57,9 +63,11 @@ class Main extends React.Component {
             {works.map((work) => {
               return(
                 <Work
+                  key={work.key} // エラー回避の為、key属性に一意の値を渡す
                   name={work.name}
                   image={work.image}
                   introduction={work.introduction}
+                  skill={work.skill}
                 />
               )
             })}

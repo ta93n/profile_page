@@ -1,13 +1,14 @@
 import React from 'react';
 
 class Work extends React.Component {
+
   constructor(props) {
     super(props);
-    this.state={isModalOpen: false}
+    this.state={isModalOpen: false};
   }
 
   handleClickWork() {
-    this.setState({isModalOpen: true})
+    this.setState({isModalOpen: true});
   }
 
   handleClickClose() {
@@ -15,36 +16,45 @@ class Work extends React.Component {
   }
 
   render() {
+
     let modal;
 
     if(this.state.isModalOpen) {
       modal = (
-        <div className='modal'>
-          <div className='modal-inner'>
-            <div className='modal-header'></div>
-            <div className='modal-introduction'>
+        <div className="modal">
+          <div className="modal-inner">
+            <div className="modal-header">
               <h2>{this.props.name}</h2>
+            </div>
+            <div className="modal-introduction">
               <p>{this.props.introduction}</p>
             </div>
             <button
-              className='modal-close-btn'
+              className="modal-close-btn"
               onClick={() => {this.handleClickClose()}}
             >
-              とじる
+              閉じる
             </button>
           </div>
         </div>
-      )
-    };
+      );
+    }
 
     return (
-      <div className="work">
-        <div
-          className="work-card"
-          onClick={() => {this.handleClickWork()}}
-        >
-          <p>{this.props.name}</p>
+      <div
+        className="work"
+        onClick={() => {this.handleClickWork()}}
+      >
+        <div className="work-image">
           <img src={this.props.image} />
+        </div>
+        <div className="work-contents">
+          <div className="work-name">
+            <h4>{this.props.name}</h4>
+          </div>
+          <div className="work-skill">
+            <p>({this.props.skill})</p>
+          </div>
         </div>
         {modal}
       </div>
