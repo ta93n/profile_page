@@ -1,49 +1,46 @@
 import React from 'react';
-import { BarChart, Bar, XAxis, YAxis } from 'recharts';
-
+import { BarChart, Bar, XAxis, YAxis } from 'recharts'; // importするrechartsコンポーネントの指定
 
 class Skill extends React.Component {
   render() {
-
     const data = [
   {
     "name": "HTML&CSS",
-    "uv": 4000
+    "習熟度": 70
   },
   {
     "name": "JavaScript",
-    "uv": 3000
+    "習熟度": 25
   },
   {
     "name": "Ruby",
-    "uv": 2000
+    "習熟度": 50
   },
   {
-    "name": "Ruby on Rails",
-    "uv": 2780
+    "name": "Rails",
+    "習熟度": 50
   },
   {
     "name": "React",
-    "uv": 1890
+    "習熟度": 15
   },
   {
     "name": "AWS",
-    "uv": 2390
+    "習熟度": 20
   },
   {
     "name": "Git",
-    "uv": 3490
+    "習熟度": 50
   },
   {
     "name": "Docker",
-    "uv": 2390
+    "習熟度": 10
   },
   {
     "name": "CircleCI",
-    "uv": 2390
+    "習熟度": 10
   }
 ]
-
     return(
       // グラフのサイズ・データ指定
       <BarChart
@@ -51,18 +48,30 @@ class Skill extends React.Component {
         height={500}
         layout="vertical" //グラフのX軸とY軸を入れ替え
         data={data}
-        margin={{top: 0, right: 0, left: 0, bottom: 0}}
+        margin={{top: 30, right: 80, left: 80, bottom: 30}}
       >
         // X軸の設定
         <XAxis
-          type="number"
+          type="number" // データタイプをnumberに変更
+          tickCount={2} // 軸の値の数を指定
+          domain={[0, 100]} // 0~100の範囲で表示させる
+          unit="%" // 単位を指定
+          tickLine={false} // 軸目盛りの有無を指定
         />
         // Y軸の設定
         <YAxis
-          type="category" //データタイプをcategoryに変更
+          type="category" // データタイプをcategoryに変更
           dataKey="name"
+          tickLine={false} // 軸目盛りの有無を指定
+          mirror={true} // trueにするとラベルをグラフ内側に表示
         />
-        <Bar dataKey="uv" fill="#82ca9d" />
+        <Bar
+          dataKey="習熟度"
+          fill="#52de86" // バーの色指定
+          barSize={30} // バーの大きさ指定
+          fillOpacity={0.4}　// バーの透過性指定
+          animationDuration={2000} // バーのアニメーション時間の指定
+        />
       </BarChart>
     );
   }
