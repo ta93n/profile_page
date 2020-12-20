@@ -9,25 +9,29 @@ class Main extends React.Component {
 
     const works = [
       {
-        key: 1,
         name: "Noodles",
         image: "/noodles.png",
-        introduction: "ラーメンの情報を友達と共有できるSNSアプリケーションです。自分で作ったものを友達に使ってもらいたいと思い、キャッチーなアプリケーションを意識しました。",
-        skill: "Rails + AWS"
+        introduction:
+          "ラーメン屋の情報を友達と共有できるSNSアプリケーションです。\n基本的なSNS機能のほか、地図上からお店に関する投稿を検索したり、ジャンルから検索したりすることができます。\nGitによるバージョン管理やテストフレームワーク(RSpec)を使用して現場開発を意識しました。\nまた AWS, Docker, CircleCI を開発に取り入れ、Web業界のトレンドにキャッチアップできるように努めました。",
+        skill: "Rails + AWS",
+        home: "https://noodles-app.com/",
+        github: "https://github.com/ta93n/Noodles_App"
       },
       {
-        key: 2,
         name: "ProfilePage",
         image: "/logo192.png",
-        introduction: "こちらのページです。",
-        skill: "React + Heroku"
+        introduction: "ご覧いただいているこちらのサイトです。\nWeb開発のフロントにReactを用いるという昨今のトレンドにキャッチアップする為、学習の一環として製作しました。",
+        skill: "React + Heroku",
+        home: "",
+        github: "https://github.com/ta93n/profile_page"
       },
       {
-        key: 3,
         name: "MemoryGame",
         image: "/MemoryGame.png",
-        introduction: "神経衰弱です。",
-        skill: "JavaScript"
+        introduction: "神経衰弱です。\nJavaScriptの学習の一環として、ライブラリ等は使用せず素のJSのみで実装しました。\nGitHub Pagesでホスティングされています。",
+        skill: "JavaScript",
+        home: "https://ta93n.github.io/Memory-game/",
+        github: "https://github.com/ta93n/Memory-game"
       }
     ];
 
@@ -60,14 +64,15 @@ class Main extends React.Component {
             <h3>WORKS</h3>
           </div>
           <div className="works-contents">
-            {works.map((work) => {
+            {works.map((work) => { // keyに関する警告が出るがうまく解決できない…
               return(
                 <Work
-                  key={work.key} // エラー回避の為、key属性に一意の値を渡す
                   name={work.name}
                   image={work.image}
                   introduction={work.introduction}
                   skill={work.skill}
+                  home={work.home}
+                  github={work.github}
                 />
               )
             })}
