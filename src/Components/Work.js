@@ -4,7 +4,7 @@ class Work extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state={isModalOpen: false};
+    this.state = {isModalOpen: false};
   }
 
   handleClickWork() {
@@ -31,7 +31,7 @@ class Work extends React.Component {
             </div>
             <button
               className="modal-close-btn"
-              onClick={() => {this.handleClickClose()}}
+              onClick={() => this.handleClickClose()}
             >
               閉じる
             </button>
