@@ -50,7 +50,7 @@ class Skill extends React.Component {
         data={data}
         margin={{top: 30, right: 80, left: 80, bottom: 30}}
       >
-        // X軸の設定
+        {/* X軸の設定 */}
         <XAxis
           type="number" // データタイプをnumberに変更
           tickCount={2} // 軸の値の数を指定
@@ -58,7 +58,7 @@ class Skill extends React.Component {
           unit="%" // 単位を指定
           tickLine={false} // 軸目盛りの有無を指定
         />
-        // Y軸の設定
+        {/* Y軸の設定 */}
         <YAxis
           type="category" // データタイプをcategoryに変更
           dataKey="name"
