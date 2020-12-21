@@ -34,10 +34,14 @@ class Work extends React.Component {
             </div>
             <div className="modal-link">
               <div className="modal-link-home">
-                <a href={this.props.home}><FontAwesomeIcon icon={faHome} /> Home</a>
+                <a href={this.props.home} target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faHome} /> Home
+                </a>
               </div>
               <div className="modal-link-github">
-                <a href={this.props.github}><FontAwesomeIcon icon={faGithub} /> GitHub</a>
+                <a href={this.props.github} target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} /> GitHub
+                </a>
               </div>
             </div>
             <button
