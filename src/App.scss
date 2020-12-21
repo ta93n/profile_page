@@ -221,15 +221,39 @@ header {
       }
     }
   }
-  #contact {
-    height: 600px;
+  #others {
+    height: 500px;
     background-color: #fafafa;
     padding: 20px 0;
-    .contact-header {
+    .others-header {
       text-align: center;
       h3 {
         padding: 20px 0;
         margin: 0;
+      }
+    }
+    .others-contents {
+      display: flex;
+      justify-content: center;
+      height: 453px;
+      .other {
+        flex: auto;
+        max-width: 250px;
+        height: 200px;
+        margin: auto 0;
+        position: relative;
+        a {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+        }
+        img:hover {
+          width: 200px;
+          height: 200px;
+          transition-duration: 0.2s;
+        }
       }
     }
   }

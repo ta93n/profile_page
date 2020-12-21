@@ -40,12 +40,12 @@ class Header extends React.Component {
           >SKILLS</Link>
           <Link
             activeClass="active"
-            to="contact"
+            to="others"
             spy={true}
             smooth={true}
             offset={-120}
             duration= {300}
-          >CONTACT</Link>
+          >OTHERS</Link>
         </nav>
       </header>
     );

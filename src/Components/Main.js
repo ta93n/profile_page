@@ -1,6 +1,7 @@
 import React from 'react';
 import Work from './Work';
 import Skill from './Skill';
+import Other from './Other';
 import ScrollUp from './ScrollUp';
 
 class Main extends React.Component {
@@ -32,6 +33,24 @@ class Main extends React.Component {
         skill: "JavaScript",
         home: "https://ta93n.github.io/Memory-game/",
         github: "https://github.com/ta93n/Memory-game"
+      }
+    ];
+
+    const others = [
+      {
+        name: "twitter",
+        icon: "/twitter.png",
+        url: "https://twitter.com/takuminsan_03"
+      },
+      {
+        name: "github",
+        icon: "/github.png",
+        url: "https://github.com/ta93n"
+      },
+      {
+        name: "qiita",
+        icon: "/qiita.png",
+        url: "https://qiita.com/nideratakumin"
       }
     ];
 
@@ -86,9 +105,20 @@ class Main extends React.Component {
             <Skill />
           </div>
         </div>
-        <div id="contact">
-          <div className="contact-header">
-            <h3>CONTACT</h3>
+        <div id="others">
+          <div className="others-header">
+            <h3>OTHERS</h3>
+          </div>
+          <div className="others-contents">
+            {others.map((other) => { // keyに関する警告が出るがうまく解決できない…
+              return(
+                <Other
+                  url={other.url}
+                  icon={other.icon}
+                  name={other.name}
+                />
+              )
+            })}
           </div>
         </div>
         <ScrollUp />
