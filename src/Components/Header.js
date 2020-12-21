@@ -19,7 +19,7 @@ class Header extends React.Component {
             to="profile"
             spy={true}
             smooth={true}
-            offset={-120}
+            offset={-250}
             duration= {300}
           >PROFILE</Link>
           <Link
@@ -27,7 +27,7 @@ class Header extends React.Component {
             to="works"
             spy={true}
             smooth={true}
-            offset={-120}
+            offset={-200}
             duration= {300}
           >WORKS</Link>
           <Link
@@ -35,7 +35,7 @@ class Header extends React.Component {
             to="skills"
             spy={true}
             smooth={true}
-            offset={-120}
+            offset={-200}
             duration= {300}
           >SKILLS</Link>
           <Link
@@ -43,7 +43,7 @@ class Header extends React.Component {
             to="others"
             spy={true}
             smooth={true}
-            offset={-120}
+            offset={-200}
             duration= {300}
           >OTHERS</Link>
         </nav>
