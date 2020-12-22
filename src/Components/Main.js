@@ -3,6 +3,7 @@ import Work from './Work';
 import Skill from './Skill';
 import Other from './Other';
 import ScrollUp from './ScrollUp';
+import * as FadeIn from './fadeIn';
 
 class Main extends React.Component {
 
@@ -58,31 +59,41 @@ class Main extends React.Component {
 
       <div className="main">
         <div id="top">
-          <div className="top-left">
-            <img src="top.jpg" alt="top" />
-          </div>
-          <div className="top-right">
-            <h3>TAKUMI NOMURA</h3>
-          </div>
+          <FadeIn.In>
+            <div className="top-left">
+              <img src="top.jpg" alt="top" />
+            </div>
+          </FadeIn.In>
+          <FadeIn.In>
+            <div className="top-right">
+              <h3>TAKUMI NOMURA</h3>
+            </div>
+          </FadeIn.In>
         </div>
         <div id="profile">
-          <div className="profile-header">
-            <h3>PROFILE</h3>
-          </div>
-          <div className="profile-contents">
-            <p>
-              日本大学文理学部体育学科を卒業後、都内の建設関連会社で5年間勤務したのち2019年7月末に退職。<br />
-              その後は地元八王子のカラオケ店でアルバイトをしながら、コンピュータサイエンス・プログラミング学習を独学で行い、<br />
-              業務未経験からwebエンジニアとしての転職を目指しています。<br />
-              趣味は「beatmaniaIIDX（音楽ゲーム）」「カラオケ」「陸上競技」「ファッション」「ラジオを聴くこと」。<br />
-            </p>
-          </div>
+          <FadeIn.Up>
+            <div className="profile-header">
+              <h3>PROFILE</h3>
+            </div>
+          </FadeIn.Up>
+          <FadeIn.Up>
+            <div className="profile-contents">
+              <p>
+                日本大学文理学部体育学科を卒業後、都内の建設関連会社で5年間勤務したのち2019年7月末に退職。<br />
+                その後は地元八王子のカラオケ店でアルバイトをしながら、コンピュータサイエンス・プログラミング学習を独学で行い、<br />
+                業務未経験からwebエンジニアとしての転職を目指しています。<br />
+                趣味は「beatmaniaIIDX（音楽ゲーム）」「カラオケ」「陸上競技」「ファッション」「ラジオを聴くこと」。<br />
+              </p>
+            </div>
+          </FadeIn.Up>
         </div>
         <div id="works">
-          <div className="works-header">
-            <h3>WORKS</h3>
-          </div>
-          <div className="works-contents">
+          <FadeIn.Up>
+            <div className="works-header">
+              <h3>WORKS</h3>
+            </div>
+          </FadeIn.Up>
+          <div className="works-contents"> {/* FadeInがモーダル部分と干渉してバグるのでここだけFadeIn無し… */}
             {works.map((work) => { // keyに関する警告が出るがうまく解決できない…
               return(
                 <Work
@@ -98,28 +109,36 @@ class Main extends React.Component {
           </div>
         </div>
         <div id="skills">
-          <div className="skills-header">
-            <h3>SKILLS</h3>
-          </div>
-          <div className="skills-contents">
-            <Skill />
-          </div>
+          <FadeIn.Up>
+            <div className="skills-header">
+              <h3>SKILLS</h3>
+            </div>
+          </FadeIn.Up>
+          <FadeIn.Up>
+            <div className="skills-contents">
+              <Skill />
+            </div>
+          </FadeIn.Up>
         </div>
         <div id="others">
-          <div className="others-header">
-            <h3>OTHERS</h3>
-          </div>
-          <div className="others-contents">
-            {others.map((other) => { // keyに関する警告が出るがうまく解決できない…
-              return(
-                <Other
-                  url={other.url}
-                  icon={other.icon}
-                  name={other.name}
-                />
-              )
-            })}
-          </div>
+          <FadeIn.Up>
+            <div className="others-header">
+              <h3>OTHERS</h3>
+            </div>
+          </FadeIn.Up>
+          <FadeIn.Up>
+            <div className="others-contents">
+              {others.map((other) => { // keyに関する警告が出るがうまく解決できない…
+                return(
+                  <Other
+                    url={other.url}
+                    icon={other.icon}
+                    name={other.name}
+                  />
+                )
+              })}
+            </div>
+          </FadeIn.Up>
         </div>
         <ScrollUp />
       </div>

@@ -15,7 +15,7 @@ header {
   width: inherit;
   background-color: #fafafa;
   position: fixed;
-  z-index: 3;
+  z-index: 2;
   nav {
     height: 100%;
     display: flex;
@@ -41,10 +41,11 @@ header {
     margin-top: 100px;
     height: 600px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #fafafa;
     .top-left {
       text-align: center;
+      padding: 0 165px 0 60px;
       img {
         width: 300px;
         height: 300px;
@@ -55,7 +56,8 @@ header {
     .top-right {
       text-align: center;
       h3 {
-        margin: 286px 40px;
+        padding: 287px 40px;
+        margin: 0;
       }
     }
   }
