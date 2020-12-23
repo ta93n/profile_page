@@ -5,7 +5,7 @@ class Other extends React.Component {
     return(
       <div className="other">
         <a href={this.props.url} target="_blank" rel="noopener noreferrer">
-          <img src={this.props.icon} width="180" height="180" alt={this.props.name} />
+          <img src={this.props.icon} alt={this.props.name} />
         </a>
       </div>
     )

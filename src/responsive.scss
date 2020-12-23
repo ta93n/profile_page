@@ -1,0 +1,148 @@
+@media (max-width: 600px) {
+  header {
+    height: 200px;
+    nav {
+      display: none;
+    }
+  }
+  .main #top {
+    margin-top: 200px;
+    height: 1500px;
+    .top-left {
+      padding: 0 125px 0 60px;
+      img {
+        margin: 600px 0;
+      }
+    }
+    .top-right h3 {
+      padding: 728px 40px;
+      font-size: 30px;
+    }
+  }
+  .main #profile {
+    height: 900px;
+    .profile-header h3 {
+      font-size: 35px;
+      padding-top: 100px;
+    }
+    .profile-contents p {
+      font-size: 29px;
+      line-height: 70px;
+    }
+  }
+  .main #works {
+    height: auto;
+    padding-bottom: 100px;
+    .works-header h3 {
+      font-size: 35px;
+      padding-top: 70px;
+    }
+    .works-contents {
+      flex-wrap: wrap;
+      .work {
+        width: 100%;
+        .work-item {
+          display: flex;
+          .work-image {
+            flex: 0 0 50%;
+            height: auto;
+          }
+          .work-contents {
+            flex: 0 0 50%;
+            h4 {
+              font-size: 30px;
+              padding-left: 15px;
+            }
+            p {
+              font-size: 25px;
+              padding-left: 15px;
+            }
+          }
+        }
+        .modal-inner {
+          width: 95%;
+          top: 20%;
+          .modal-header h2 {
+            font-size: 40px;
+            padding-top: 70px;
+          }
+          .modal-introduction p {
+            width: 80%;
+            line-height: 60px;
+            font-size: 30px;
+            margin: 36px auto;
+          }
+          .modal-link .modal-link-home,
+          .modal-link-github {
+            flex: 50% 1;
+            font-size: 30px;
+          }
+          .modal-link-github a {
+            padding: 20px 60px;
+          }
+          .modal-link-home a {
+            padding: 20px 65px;
+          }
+          .modal-close-btn {
+            font-size: 30px;
+          }
+        }
+      }
+      .work:hover {
+        margin-top: 15px;
+        background-color: #cfcfcf;
+        transition-duration: 0.2s;
+      }
+    }
+  }
+  .main #skills {
+    height: 1000px;
+    .skills-header h3 {
+      font-size: 35px;
+      padding-top: 70px;
+    }
+    .skills-contents {
+      height: 800px;
+    }
+  }
+  .main #others {
+    height: 1000px;
+    .others-header h3 {
+      font-size: 35px;
+      padding-top: 70px;
+    }
+    .others-contents {
+      flex-wrap: wrap;
+      .other {
+        max-width: 600px;
+        width: 400px;
+        height: 200px;
+        img {
+          width: 300px;
+          height: 300px;
+        }
+        img:hover {
+          width: 320px;
+          height: 320px;
+          transition-duration: 0.2s;
+        }
+      }
+    }
+  }
+  .main #scroll-up {
+    height: 500px;
+    position: relative;
+    .scroll-up-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-50%) translateX(-50%);
+      height: 200px;
+      width: 200px;
+      .fa {
+        font-size: 200px;
+      }
+    }
+  }
+}

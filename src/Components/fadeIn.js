@@ -7,7 +7,7 @@ import React from "react";
 import styled from "styled-components"; // JavaScript内でCSSを書ける
 import InViewMonitor from "react-inview-monitor"; // 画面内に要素が入ってきた時に、子要素にクラス名をつけたり、propsを渡したりできる
 
-export const In = ({ children, delay, margin = "-40%" }) => (
+export const In = ({ children, delay, margin = "0%" }) => (
   <InViewMonitor childPropsInView={{ isActive: true }} intoViewMargin={margin}>
     <FadeIn isActive={false} delay={delay}>{children}</FadeIn>
   </InViewMonitor>
