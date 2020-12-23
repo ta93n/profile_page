@@ -1,8 +1,50 @@
 @media (max-width: 600px) {
   header {
     height: 200px;
+    z-index: 6;
     nav {
       display: none;
+    }
+    .btn-hamburger {
+      display: block;
+      text-align: right;
+      button {
+        margin-top: 26px;
+        margin-right: 10px;
+      }
+    }
+    .hamburgerMenu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 50%;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 5;
+      margin-top: 200px;
+      .hamburgerMenu-inner {
+        height: 100%;
+        nav {
+          display: block;
+          width: 100%;
+          a {
+            display: block;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+            line-height: 150px;
+            font-size: 40px;
+            padding-left: 20px;
+          }
+          a:hover {
+            background-color: rgba(0, 0, 0, 0);
+          }
+          .active {
+            background-color: rgba(0, 0, 0, 0);
+          }
+        }
+      }
     }
   }
   .main #top {
