@@ -11,11 +11,10 @@ phases:
       - yarn
   build:
     commands:
-      # yarn build し release ディレクトリにビルド後のファイルを生成させる
       - yarn build
-  post_build:
+  post_build: # ビルド後のファイルをS3に投げる
     commands:
       # AWS CLI を使って release ディレクトリの内容をS3にデプロイします
       # --delete でS3にしかないファイルはS3から削除
       # --acl public-read で public read にして公開しています
-      - aws s3 sync release --delete --acl public-read s3://takumi-nomura
+      - aws s3 sync build s3://takumi-nomura --delete --acl public-read
