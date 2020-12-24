@@ -1,0 +1,21 @@
+# AWS CodeBuildによって実行されるビルド時のコマンドと、
+# ビルド結果のファイルの位置やキャッシュの位置を示したものです。
+# CodeBuildはこれを読んで、ビルドを実行してくれます。
+
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      # install packages
+      - yarn
+  build:
+    commands:
+      # yarn build し release ディレクトリにビルド後のファイルを生成させる
+      - yarn build
+  post_build:
+    commands:
+      # AWS CLI を使って release ディレクトリの内容をS3にデプロイします
+      # --delete でS3にしかないファイルはS3から削除
+      # --acl public-read で public read にして公開しています
+      - aws s3 sync release s3://{takumi-nomura} --delete --acl public-read
