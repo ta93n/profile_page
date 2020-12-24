@@ -115,7 +115,7 @@ class Main extends React.Component {
             </div>
           </FadeIn.Up>
           <FadeIn.Up>
-            <div className="skills-contents">
+            <div className="skills-contents" style={{ width: '100%' }}>
               <Skill />
             </div>
           </FadeIn.Up>

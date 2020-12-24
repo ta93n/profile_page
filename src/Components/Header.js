@@ -130,7 +130,7 @@ class Header extends React.Component {
           <HamburgerSqueeze
             isActive={this.state.isActive}
             toggleButton={this.toggleButton}
-            buttonWidth={110}
+            buttonWidth={70}
           />
         </div>
         {hamburgerMenu}

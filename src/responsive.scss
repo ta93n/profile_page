@@ -1,6 +1,27 @@
+@media (max-width: 1100px) {
+  .app {
+    width: 100%;
+    #top {
+      .top-left {
+        padding: 0;
+      }
+      .top-right {
+        text-align: center;
+        h3 {
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 600px) {
+  .app {
+    flex-direction: unset;
+  }
   header {
-    height: 200px;
+    height: 100px;
     z-index: 6;
     nav {
       display: none;
@@ -9,8 +30,8 @@
       display: block;
       text-align: right;
       button {
-        margin-top: 26px;
-        margin-right: 10px;
+        padding: 0;
+        margin: 29px 20px 0 0;
       }
     }
     .hamburgerMenu {
@@ -21,7 +42,7 @@
       bottom: 0;
       background-color: rgba(0, 0, 0, 0.8);
       z-index: 5;
-      margin-top: 200px;
+      margin-top: 100px;
       .hamburgerMenu-inner {
         height: 100%;
         nav {
@@ -33,8 +54,8 @@
             margin: 0;
             padding: 0;
             border-radius: 0;
-            line-height: 150px;
-            font-size: 40px;
+            line-height: 70px;
+            font-size: 30px;
             padding-left: 20px;
           }
           a:hover {
@@ -48,55 +69,64 @@
     }
   }
   .main #top {
-    margin-top: 200px;
-    height: 1500px;
+    margin-top: 100px;
+    height: 900px;
     .top-left {
-      padding: 0 125px 0 60px;
+      padding: 0;
       img {
+        width: 150px;
+        height: 150px;
         margin: 500px 0 700px 0;
       }
     }
     .top-right h3 {
-      padding: 628px 40px 828px 40px;
+      padding: 0;
       font-size: 30px;
     }
   }
   .main #profile {
-    height: 900px;
-    .profile-header h3 {
-      font-size: 35px;
-      padding-top: 100px;
+    height: 700px;
+    padding-bottom: 50px;
+    .profile-header {
+      padding: 30px 0 20px 0;
+      h3 {
+        font-size: 25px;
+        padding: 0px;
+      }
     }
     .profile-contents p {
-      font-size: 29px;
-      line-height: 70px;
+      font-size: 20px;
+      line-height: 40px;
     }
   }
   .main #works {
     height: auto;
-    padding-bottom: 100px;
-    .works-header h3 {
-      font-size: 35px;
-      padding-top: 70px;
+    padding-bottom: 50px;
+    .works-header {
+      padding: 30px 0 20px 0;
+      h3 {
+        font-size: 25px;
+        padding: 0px;
+      }
     }
     .works-contents {
       flex-wrap: wrap;
       .work {
         width: 100%;
+        height: auto;
         .work-item {
           display: flex;
           .work-image {
             flex: 0 0 50%;
-            height: auto;
           }
           .work-contents {
             flex: 0 0 50%;
             h4 {
-              font-size: 30px;
+              font-size: 25px;
               padding-left: 15px;
             }
             p {
-              font-size: 25px;
+              font-size: 20px;
               padding-left: 15px;
             }
           }
@@ -138,41 +168,50 @@
     }
   }
   .main #skills {
-    height: 1000px;
-    .skills-header h3 {
-      font-size: 35px;
-      padding-top: 70px;
+    height: 500px;
+    .skills-header {
+      padding: 30px 0 20px 0;
+      h3 {
+        font-size: 25px;
+        padding: 0px;
+      }
     }
     .skills-contents {
-      height: 800px;
+      height: 400px;
     }
   }
   .main #others {
-    height: 1000px;
-    .others-header h3 {
-      font-size: 35px;
-      padding-top: 70px;
+    height: auto;
+    .others-header {
+      padding: 30px 0 20px 0;
+      h3 {
+        font-size: 25px;
+        padding: 0px;
+      }
     }
     .others-contents {
+      padding: 20px 0;
       flex-wrap: wrap;
+      height: auto;
       .other {
-        max-width: 600px;
-        width: 400px;
-        height: 200px;
+        max-width: 200px;
+        width: 200px;
+        height: 150px;
+        margin: 0;
         img {
-          width: 300px;
-          height: 300px;
+          width: 120px;
+          height: 120px;
         }
         img:hover {
-          width: 320px;
-          height: 320px;
+          width: 150px;
+          height: 150px;
           transition-duration: 0.2s;
         }
       }
     }
   }
   .main #scroll-up {
-    height: 500px;
+    height: 300px;
     position: relative;
     .scroll-up-btn {
       position: absolute;
@@ -183,7 +222,7 @@
       height: 200px;
       width: 200px;
       .fa {
-        font-size: 200px;
+        font-size: 100px;
       }
     }
   }
