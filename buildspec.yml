@@ -18,4 +18,4 @@ phases:
       # AWS CLI を使って release ディレクトリの内容をS3にデプロイします
       # --delete でS3にしかないファイルはS3から削除
       # --acl public-read で public read にして公開しています
-      - aws s3 sync release s3://takumi-nomura --delete --acl public-read
+      - aws s3 sync s3://takumi-nomura --delete --acl public-read
