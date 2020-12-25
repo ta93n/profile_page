@@ -49,7 +49,7 @@ class Skill extends React.Component {
           height={500}
           layout="vertical" //グラフのX軸とY軸を入れ替え
           data={data}
-          margin={{top: 30, right: 80, left: 80, bottom: 30}}
+          margin={{top: 20, right: 30, left: 30, bottom: 20}}
         >
           {/* X軸の設定 */}
           <XAxis
