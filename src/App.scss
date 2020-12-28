@@ -224,7 +224,7 @@ header {
     }
   }
   #skills {
-    height: 600px;
+    height: auto;
     background-color: #f0f0f0;
     padding: 20px 0;
     .skills-header {
@@ -236,6 +236,18 @@ header {
     }
     .skills-contents {
       height: 500px;
+    }
+    .skills-attention {
+      background-color: #e3e3e3;
+      border-radius: 5px;
+      opacity: 0.6;
+      font-size: 1px;
+      padding: 4px;
+      margin: 0 20px;
+      li {
+        list-style: none;
+        color: #636363;
+      }
     }
   }
   #others {

@@ -89,7 +89,8 @@
     }
   }
   .main #profile {
-    height: 450px;
+    height: auto;
+    padding-bottom: 30px;
     .profile-header {
       padding: 30px 0 20px 0;
       h3 {
@@ -186,7 +187,6 @@
     }
   }
   .main #skills {
-    height: 500px;
     .skills-header {
       padding: 30px 0 20px 0;
       h3 {
@@ -243,7 +243,7 @@
       height: 200px;
       width: 200px;
       .fa {
-        font-size: 100px;
+        font-size: 60px;
       }
     }
   }

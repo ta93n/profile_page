@@ -6,11 +6,11 @@ class Skill extends React.Component {
     const data = [
   {
     "name": "HTML&CSS",
-    "習熟度": 60
+    "習熟度": 55
   },
   {
     "name": "JavaScript",
-    "習熟度": 20
+    "習熟度": 30
   },
   {
     "name": "Ruby",
@@ -22,15 +22,15 @@ class Skill extends React.Component {
   },
   {
     "name": "React",
-    "習熟度": 10
+    "習熟度": 15
   },
   {
     "name": "AWS",
-    "習熟度": 20
+    "習熟度": 10
   },
   {
     "name": "Git",
-    "習熟度": 50
+    "習熟度": 40
   },
   {
     "name": "Docker",
@@ -54,7 +54,7 @@ class Skill extends React.Component {
           {/* X軸の設定 */}
           <XAxis
             type="number" // データタイプをnumberに変更
-            tickCount={2} // 軸の値の数を指定
+            tickCount={3} // 軸の値の数を指定
             domain={[0, 100]} // 0~100の範囲で表示させる
             unit="%" // 単位を指定
             tickLine={false} // 軸目盛りの有無を指定

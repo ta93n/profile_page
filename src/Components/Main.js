@@ -79,9 +79,11 @@ class Main extends React.Component {
           <FadeIn.Up>
             <div className="profile-contents">
               <p>
-                日本大学文理学部体育学科を卒業後、都内の建設関連会社で5年間勤務したのち2019年7月末に退職。<br />
-                その後は地元八王子のカラオケ店でアルバイトをしながら、コンピュータサイエンス・プログラミング学習を独学で行い、<br />
-                業務未経験からwebエンジニアとしての転職を目指しています。<br />
+                1991年生まれ。<br />
+                2014年3月に都内某大学の体育系学部を卒業後、建設関連企業に就職し営業担当などを経験。<br />
+                キャリアを模索する中、以前から興味を抱いていたIT業界への転職を決意し、2019年7月に退職。<br />
+                その後はコンピュータサイエンス・プログラミング学習を独学で行い、<br />
+                現在はWebエンジニアとしての転職を目指しています。<br />
                 趣味は「beatmaniaIIDX（音楽ゲーム）」「カラオケ」「陸上競技」「ファッション」「ラジオを聴くこと」。<br />
               </p>
             </div>
@@ -117,6 +119,13 @@ class Main extends React.Component {
           <FadeIn.Up>
             <div className="skills-contents" style={{ width: '100%' }}>
               <Skill />
+            </div>
+            <div className="skills-attention">
+              <pre>
+                <li className="skills-0">0%     何も知らない</li>
+                <li className="skills-50">50%   その技術を使うことに抵抗が無い</li>
+                <li className="skills-100">100% 業務にてその技術を使いこなす自信がある</li>
+              </pre>
             </div>
           </FadeIn.Up>
         </div>
