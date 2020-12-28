@@ -14,7 +14,7 @@ class Main extends React.Component {
         name: "Noodles",
         image: "/noodles.png",
         introduction:
-          "ラーメン屋の情報を友達と共有できるSNSアプリケーションです。\n基本的なSNS機能のほか、地図上からお店に関する投稿を検索したり、ジャンルから検索したりすることができます。\nGitによるバージョン管理やテストフレームワーク(RSpec)を使用して現場開発を意識しました。\nまた AWS, Docker, CircleCI を開発に取り入れ、Web業界のトレンドにキャッチアップできるように努めました。",
+          "ラーメン屋さんの情報を友達と共有できるSNSです。\n基本的なSNS機能に加え、投稿内容から自動でラーメン屋さんの位置情報を取得し地図上での投稿検索が行えるほか、ラーメンのジャンルから投稿を検索したりすること等もできます。\nGitによるバージョン管理やテストフレームワーク(RSpec)を使用して現場開発を意識しました。\nまた AWS, Docker, CircleCI を開発に取り入れ、Web業界のトレンドにキャッチアップできるように努めました。",
         skill: "Rails + AWS",
         home: "https://noodles-app.com/",
         github: "https://github.com/ta93n/Noodles_App"
