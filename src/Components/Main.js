@@ -122,8 +122,8 @@ class Main extends React.Component {
             </div>
             <div className="skills-attention">
               <pre>
-                <li className="skills-0">0%     何も知らない</li>
-                <li className="skills-50">50%   その技術を使うことに抵抗が無い</li>
+                <li className="skills-0">0%   何も知らない</li>
+                <li className="skills-50">50%  その技術を使うことに抵抗が無い</li>
                 <li className="skills-100">100% 業務にてその技術を使いこなす自信がある</li>
               </pre>
             </div>
