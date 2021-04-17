@@ -13,16 +13,24 @@ class Skill extends React.Component {
     "習熟度": 30
   },
   {
-    "name": "Ruby",
-    "習熟度": 50
-  },
-  {
-    "name": "Rails",
-    "習熟度": 50
+    "name": "TypeScript",
+    "習熟度": 10
   },
   {
     "name": "React",
     "習熟度": 15
+  },
+  {
+    "name": "Vue",
+    "習熟度": 20
+  },
+  {
+    "name": "Ruby(Rails)",
+    "習熟度": 50
+  },
+  {
+    "name": "Python(Django)",
+    "習熟度": 40
   },
   {
     "name": "AWS",

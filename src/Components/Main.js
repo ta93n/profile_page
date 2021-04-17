@@ -14,10 +14,10 @@ class Main extends React.Component {
         name: "Noodles",
         image: "/noodles.png",
         introduction:
-          "ラーメン屋さんの情報を友達と共有できるSNSです。\n基本的なSNS機能に加え、投稿内容から自動でラーメン屋さんの位置情報を取得し地図上での投稿検索が行えるほか、ラーメンのジャンルから投稿を検索したりすること等もできます。\nGitによるバージョン管理やテストフレームワーク(RSpec)を使用して現場開発を意識しました。\nまた AWS, Docker, CircleCI を開発に取り入れ、Web業界のトレンドにキャッチアップできるように努めました。",
+          "ラーメン屋さんの情報を友達と共有できるSNSです。\n基本的なSNS機能に加え、投稿内容から自動でラーメン屋さんの位置情報を取得し地図上での投稿検索が行えるほか、ラーメンのジャンルから投稿を検索したりすること等もできます。\nAWS, Docker, CircleCI を開発に取り入れ、Web業界のトレンドにキャッチアップできるように努めました。\n※公開終了しました。",
         skill: "Rails + AWS",
-        home: "https://noodles-app.com/",
-        github: "https://github.com/ta93n/Noodles_App"
+        home: "",
+        github: "https://github.com/ta93n/Noodles_App#readme"
       },
       {
         name: "ProfilePage",
@@ -41,7 +41,7 @@ class Main extends React.Component {
       {
         name: "twitter",
         icon: "/twitter.png",
-        url: "https://twitter.com/takuminsan_03"
+        url: "https://twitter.com/takuminsan_com"
       },
       {
         name: "github",
@@ -52,6 +52,11 @@ class Main extends React.Component {
         name: "qiita",
         icon: "/qiita.png",
         url: "https://qiita.com/nideratakumin"
+      },
+      {
+        name: "note",
+        icon: "/note.png",
+        url: "https://note.com/takuminsan"
       }
     ];
 
@@ -80,11 +85,12 @@ class Main extends React.Component {
             <div className="profile-contents">
               <p>
                 1991年生まれ。<br />
-                2014年3月に都内某大学の体育系学部を卒業後、建設関連企業に就職し営業担当などを経験。<br />
-                キャリアを模索する中、以前から興味を抱いていたIT業界への転職を決意し、2019年7月に退職。<br />
-                その後はコンピュータサイエンス・プログラミング学習を独学で行い、<br />
-                現在はWebエンジニアとしての転職を目指しています。<br />
-                趣味は「beatmaniaIIDX（音楽ゲーム）」「カラオケ」「陸上競技」「ファッション」「ラジオを聴くこと」。<br />
+                2014年3月に都内某大学の体育系学部を卒業後、建設関連企業に就職し営業職などを経験したのち、<br />
+                以前から興味を抱いていたIT業界への転職を決意し、2019年7月に退職。<br />
+                その後はコンピューターやプログラミングの学習を独学で行いながら、就職活動用のポートフォリオとしてWebアプリケーションを開発。<br />
+                2021年3月に自社でシステム開発を行う不動産会社に就職し、社内システムの開発業務などを行っている。<br />
+                使用技術は「Django」「Vue.js」。<br />
+                好きなことは「beatmaniaIIDX」「カラオケ」「陸上競技」「ファッション」「ラジオを聴くこと」。<br />
               </p>
             </div>
           </FadeIn.Up>

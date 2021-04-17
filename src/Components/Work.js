@@ -20,6 +20,16 @@ class Work extends React.Component {
 
   render() {
     let modal;
+    let modalLinkHome;
+    if (this.props.home) {
+      modalLinkHome = (
+        <div className="modal-link-home">
+          <a href={this.props.home} target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faHome} /> Home
+          </a>
+        </div>
+      );
+    }
     if (this.state.isModalOpen) {
       modal = (
         <div className="modal">
@@ -33,11 +43,7 @@ class Work extends React.Component {
               </p>
             </div>
             <div className="modal-link">
-              <div className="modal-link-home">
-                <a href={this.props.home} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faHome} /> Home
-                </a>
-              </div>
+              {modalLinkHome}
               <div className="modal-link-github">
                 <a href={this.props.github} target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} /> GitHub
