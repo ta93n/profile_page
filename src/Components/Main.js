@@ -57,6 +57,11 @@ class Main extends React.Component {
         name: "note",
         icon: "/note.png",
         url: "https://note.com/takuminsan"
+      },
+      {
+        name: "youtube",
+        icon: "/youtube_social_circle_red.png",
+        url: "https://www.youtube.com/channel/UCkJXkijFl3yjcJT5oxOeWGA/videos"
       }
     ];
 
